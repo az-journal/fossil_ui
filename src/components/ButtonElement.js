@@ -8,6 +8,7 @@ border:none;
 outline:none;
 cursor:pointer;
 display:flex;
+width:12rem;
 justify-content: center;
 align-items: center;
 transition: all 0.2s ease-in-out;
@@ -20,17 +21,19 @@ padding: ${(big)=> (big ? '14px 48px' : '12px 30px')};
 margin-right: 15px;
 
 
+
 &:hover{
     transition: all 0.2s ease-in-out;
-    background: ${({primary})=> (primary ? '#fff' : '#E57F3B' )};
-    color: #E57F3B;
+    background: ${({primary})=> (primary ? '#E57F3B' : '#E57F3B' )};
+    color: #fff;
+    
 }
 `
 export const ButtonMore = styled(Link)`
 border: 2px solid #E57F3B;
 border-radius: 5px;
 background:  ${({primary})=> (primary ? '#000' : '#E57F3B')};
-color: #E57F3B;
+color: #fff;
 display: inline-block;
 letter-spacing: 0.1em;
 font-size: ${({fontBig})=>(fontBig ? '20px' : '16px')};
@@ -45,7 +48,8 @@ margin-left: 15px;
 
 &:hover{
     transition: all 0.2s ease-in-out;
-    background: ${({primary})=> (primary ? '#E57F3B' : '#000')};
-    color: #fff;
+    background: ${({primary})=> (primary ? '#000' : '#000')};
+    color: #E57F3B;
+    
 }
 `

@@ -48,32 +48,28 @@ padding-top: 0;
 padding-bottom: 60px;
 `
 
-export const TopLine=styled.p`
-color: #E57F3B;
-font-size: 18px;
-line-height:16px;
-font-weight: 700;
-letter-spacing: 1.4px;
-text-transform: uppercase;
-margin-bottom: 25px;
-`
-export const Heading=styled.p`
-margin-bottom: 35px;
-font-size: 38px;
-line-height: 1.1px;
-font-weight: 600;
-color: #E5E5E5;
-line-height: 44px;
 
+export const Heading=styled.p`
+color: whitesmoke;
+font-size: 48px;
+text-transform: uppercase;
+letter-spacing: 0.18em;
+font-weight: 500;
+margin-bottom: 50px;
+
+
+@media screen and (max-width:768px) {
+    font-size: 40px;
+}
 @media screen and (max-width:480px) {
-    font-size:22px;
+    font-size: 32px;
 }
 `
 export const Subtitle=styled.p`
 max-width: 440px;
 margin-bottom: 45px;
 font-size: 18px;
-line-height: 24px;
+line-height: 30px;
 font-family:'Courier New', Courier, monospace;
 color: ${({ darkText}) => (darkText ? '#010606' : '#E5E5E5')};
 `
@@ -85,17 +81,10 @@ justify-content: flex-start;
 export const ImgWrap=styled.div`
 max-width: 555px;
 height:100%;
+margin-left: 10rem;
 `
 export const Img=styled.img`
 width: 100%;
-margin: 0 0 10px 0;
 padding-right:0;
 `
 
-export const Paragraph = styled.p`
-font-size: 17px;
-font-weight: 500;
-font-style: italic;
-color: #E5E5E5;
-
-`

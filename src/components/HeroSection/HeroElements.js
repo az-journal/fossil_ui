@@ -58,7 +58,7 @@ align-self: center;
 margin-bottom: 1rem;
 `
 
-export const HeroH1 = styled.h1`
+/*export const HeroH1 = styled.h1`
 color: whitesmoke;
 font-size: 48px;
 text-align: center;
@@ -75,7 +75,7 @@ margin-top:0.5rem;
 @media screen and (max-width:480px) {
     font-size: 32px;
 }
-`
+`*/
 
 export const HeroBtnWrapper = styled.div`
 margin-top: 32px;
